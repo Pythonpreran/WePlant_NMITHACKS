@@ -1,0 +1,133 @@
+h1{
+    color:red;
+}
+p{
+    color: brown;
+}
+button{
+    color: brown;
+    background-color: rgb(255, 251, 10);
+}
+body{
+    background-image: url(css.jpg);
+    background-size: cover;
+}
+p,h2{
+    text-align: center;
+}
+h2{
+    text-decoration: red wavy underline;
+}
+h1{
+    font-weight: normal;
+}
+h2{
+    font-weight: bold;
+}
+h3{
+    font-weight: bolder;
+}
+h4{
+    font-weight: lighter;
+}
+#one{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px ;
+    text-transform: uppercase;
+}
+#two
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 10px;
+}
+#box1{
+    height: 100 px;
+    width: 150px;
+    background-color:rgba(0, 0, 255, 0.5);
+    border-width: 2px;
+    border-style: dashed;
+    border-color: blue;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 10 px;
+    top: 100px;
+    left: 100px;
+    animation-name: coloranimate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 5;
+}
+#box2{
+    height: 50%;
+    width: 170%;
+    background-color: #d400ff;
+    font-size: 0.5em;
+    animation: coloranimate 2s ease-in 0s infinite left normal;
+}
+h1{
+    height: 50px;
+    width: 100px;
+    background-color:black ;
+    border: 5px solid rgb(122, 14, 104);
+    padding:1px 2px 3px 4px;
+}
+#box3{
+    position: relative;
+    left: 60px;
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    border: 2px solid black;
+}
+#box4{
+    position: relative;
+    left: 20px;
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    border: 2px solid black;
+}
+#box3:hover{
+    background-color: red;
+    color: antiquewhite;
+    transition-duration: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    font-size: large;
+}
+#box5{
+    position: fixed;
+    bottom: 20px;
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    border: 2px solid black;
+    transform: translate(200px);
+}
+#box5:hover{
+    transition: all 2s ease-in;
+    background-color: black;
+    color: antiquewhite;
+    transform: scale(1,2);
+}
+#box6{
+    position: absolute;
+    bottom: 30px;
+    height: 50px;
+    width: 40px;
+    background-color: aqua;
+    border: 2px solid black;
+    transform: rotate(45deg);
+}
+@media(width:600px){
+    div{
+        background-color: red;
+    }
+}
+@keyframes coloranimate {
+ from{ background-color: aqua;}
+ to{background-color: red;}
+    
+}

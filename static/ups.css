@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    background-color: #3d3d3d;
+}
+
+.logo img {
+    max-height: 100px;
+    margin-right: 0px;
+}
+
+nav {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-right: 1px solid #333;
+}
+
+nav a:last-child {
+    border-right: none;
+}
+
+.dashboard {
+    text-decoration: none;
+    color: #000000; 
+    position: relative; 
+}
+
+.dashboard::after {
+    content: '';
+    position: absolute; 
+    bottom: -0.2px; 
+    left: 0;
+    width: 0; 
+    height: 3px;
+    background-color: green; 
+    transition: width 1s; 
+}
+
+.dashboard:hover::after {
+    width: 100%; 
+}
+
+.container {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 90vh; 
+    width: 90%; 
+    margin: auto; 
+}
+
+
+.success-message {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-message img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.success-message h2 {
+    margin: 0;
+    font-size: 24px;
+}
+  @keyframes sparkle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.celebrate::before,
+.celebrate::after {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 9999;
+    animation: sparkle 1s infinite linear;
+}
+
+.celebrate::before {
+    top: 10%;
+    left: 20%;
+}
+
+.celebrate::after {
+    top: 15%;
+    left: 50%;
+}

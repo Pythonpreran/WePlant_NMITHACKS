@@ -1,0 +1,68 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border-right: 1px solid #ffffff;
+        }
+        nav a:last-child {
+            border-right: none;
+        }
+        .bg{
+            background-size: cover;
+        }
+        .logo{
+          
+                display: block;
+                margin: 0 auto;
+            
+          }
+.dashboard{
+    text-decoration: none;
+    color: #0f0f0f; 
+    position: relative; 
+}
+
+
+.dashboard::after {
+    content: '';
+    position: absolute; 
+    bottom: -0.2px; 
+    left: 0;
+    width: 0; 
+    height: 3px;
+    background-color: green; 
+    transition: width 0.3s; 
+}
+.dashboard:hover::after {
+    width: 100%; 
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    top: 80px;
+}
+.text
+{
+    color: white;
+    font-size: 50px;
+    position: relative;
+    bottom: 1300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+
+

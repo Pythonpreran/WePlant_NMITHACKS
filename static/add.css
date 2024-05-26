@@ -1,0 +1,62 @@
+body {
+    background-image: url(2.png);
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+    font-family: 'Arial Black', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.file-upload-form {
+    width: 100%;
+    height: calc(100vh - 150px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-upload-label input {
+    display: none;
+}
+
+.file-upload-label svg {
+    height: 100px;
+    fill: rgb(82, 82, 82);
+    margin-bottom: 20px;
+}
+
+.file-upload-label {
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 50px 100px;
+    border-radius: 60px;
+    border: 3px dashed rgb(82, 82, 82);
+    box-shadow: 0px 0px 200px -50px rgba(0, 0, 0, 0.719);
+}
+
+.file-upload-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.browse-button {
+    background-color: rgb(82, 82, 82);
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.browse-button:hover {
+    background-color: rgb(14, 14, 14);
+}

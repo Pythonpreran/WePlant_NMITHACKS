@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-right: 1px solid #333;
+}
+nav a:last-child {
+    border-right: none;
+}
+
+.logo img{
+  
+        max-height: 100px;
+        margin-right: 0px;
+    
+        
+    
+  }
+  .logo
+  {
+    background-color: #3d3d3d;
+    width: 100%;
+  }
+  
+.dashboard{
+text-decoration: none;
+color: #000000; 
+position: relative; 
+}
+
+
+.dashboard:hover::after::after {
+content: '';
+position: absolute; 
+bottom: -0.2px; 
+left: 0;
+width: 0; 
+height: 3px;
+background-color: green; 
+transition: width 1s; 
+}
+.dashboard:hover::after {
+width: 100%; 
+}
+body {
+    background: linear-gradient(to right, rgb(146, 243, 108), rgb(5, 156, 21));
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    color: #fff;
+    font-size: 10rem;
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.sub-heading {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+article {
+    width: 80%;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+    font-family: 'Poppins', sans-serif;
+    border: 3px solid rgb(3, 91, 125);
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(3, 91, 125);
+}
+
+.active {
+    color: white;
+    background-color: rgb(3, 91, 125);
+}
+
+.active:hover {
+    color: rgb(3, 91, 125);
+    background-color: transparent;
+    border: 3px solid rgb(3, 91, 125);
+}
+
+@media screen and (max-width: 200px) {
+    
+    .heading {
+        font-size: 10rem;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 1.2rem;
+        flex-direction: column;
+    }
+}

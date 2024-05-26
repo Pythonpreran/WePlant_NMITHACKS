@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.full-page {
+    height: 100vh;
+    width: 100%;
+    background-image: url("tree.avif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-page {
+    width: 90%;
+    max-width: 1266px;
+    background: url("bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.col-1 {
+    flex-basis: 50%;
+    min-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.main-heading {
+    color: rgb(5, 156, 21);
+    padding-bottom: 20px;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form {
+    width: 100%;
+}
+
+.form input {
+    font-family: sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.form button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 15px;
+    background: rgb(2, 126, 15);
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.form button:hover {
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    font-size: 1.1em;
+    background: rgb(5, 156, 21);
+}
+
+.form .message {
+    font-size: 1em;
+    margin: 15px 0;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form .message a {
+    color: rgb(2, 126, 15);
+    text-decoration: none;
+}
+
+.form .message a:hover {
+    color: rgb(5, 156, 21);
+}
+
+.form .register-form {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.text {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
