@@ -1,0 +1,21 @@
+Instructions for Running the Application:
+
+1. Install Python if not already installed. You can download it from https://www.python.org/downloads/.
+
+2. Install the required Python libraries by running the following command in your terminal or command prompt: pip install -r requirements.txt
+
+
+3. Replace the following placeholders in the code with your own API keys:
+- Replace `'YOUR_SQLALCHEMY_DATABASE_URI'` with the URI for your database.
+- Replace `'YOUR_GOOGLE_APPLICATION_CREDENTIALS_PATH'` with the path to your Google Cloud Vision API credentials JSON file.
+- Replace `'YOUR_GEMINI_API_KEY'` with your Gemini API key.
+- Replace `'YOUR_GOOGLE_MAPS_API_KEY'` with your Google Maps API key.
+
+4. Run the application by executing the following command:
+
+Replace `your_file_name.py` with the name of the Python file where you've saved the code.
+
+5. Open your web browser and go to http://localhost:5000 to access the application.
+
+Note: Make sure you have an internet connection and necessary permissions to access external APIs. Ensure your API keys are kept secure and not shared publicly.
+

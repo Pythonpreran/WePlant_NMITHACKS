@@ -1,0 +1,9 @@
+Flask==2.0.2
+Flask-SQLAlchemy==3.0.0
+Flask-WTF==0.15.1
+Flask-Login==0.5.0
+google-cloud-vision==2.5.0
+google-generativeai==0.1.1
+opencv-python==4.5.4.58
+exifread==2.3.0
+geopy==2.2.0
