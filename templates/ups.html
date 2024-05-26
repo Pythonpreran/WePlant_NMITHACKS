@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploaded Successfully</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ups.css') }}">
+</head>
+<body>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+    </div>
+    <nav>
+        <a href="{{ url_for('home') }}" class="dashboard">Home</a>
+        <a href="{{ url_for('upload_form') }}" class="dashboard">Upload A Plant</a>
+        <a href="{{ url_for('my_plants') }}" class="dashboard">My Plants</a>
+        <a href="#leaderboard" class="dashboard">Leaderboard</a>
+        <a href="{{ url_for('plant_gpt') }}" class="dashboard">PlantGPT</a>
+        <a href="{{ url_for('plantmap') }}" class="dashboard">PlantMap</a>
+    </nav>
+    <div class="container">
+        <div class="success-message">
+            <img src="{{ url_for('static', filename='up.jpg') }}" alt="Success Icon">
+            <h2>Uploaded Successfully!</h2>
+            <h3>Thank You For Uploading!</h3>
+        </div>
+    </div>
+</body>
+</html>

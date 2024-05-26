@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEPLANT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='error.css') }}">
+</head>
+<body>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='logo.png') }}"><br>
+    </div>
+    <nav>
+        <a href="dashboard.html" class="dashboard">Home</a>
+        <a href="upload.html" class="dashboard">Upload A Plant</a>
+        <a href="myplants.html" class="dashboard">My Plants</a>
+        <a href="#leaderboard" class="dashboard">Leaderboard</a>
+        <a href="#pgpt" class="dashboard">PlantGPT</a>
+        <a href="http://127.0.0.1:5000/plantmap" class="dashboard">PlantMap</a>
+    </nav>
+    <section id="container">
+        <h1 class="heading"> Image Error </h1>
+        <h3 class="sub-heading">Oops! the uploaded image of the plant is not genuine.</h3>
+        <article>
+            Sorry, the uploaded image is of not a specific plant. so, please reupload the image in suitable quality 
+        </article>
+        <div class="buttons">
+            <button class="btn active" id="home"><a href="/upload"> Return back</a></button>
+            <button class="btn" id="report"><a href="/help"> Report Problem</a></button>
+        </div>
+    </section>
+</body>
+</html>

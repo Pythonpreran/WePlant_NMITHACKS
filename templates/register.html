@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>We Plant - Let's Plant Together</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+    <div class="full-page">
+        <div class="sub-page">
+            <div class="navigation-bar">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="form-box">
+                        <div class="form">
+                            <form class="register-form" action="{{ url_for('register') }}" method="POST">
+                                <center><h1 class="main-heading">Register</h1></center>
+                                <input type="text" name="first_name" placeholder="First Name" required />
+                                <input type="text" name="last_name" placeholder="Last Name" required />
+                                <input type="email" name="email" placeholder="Email" required />
+                                <input type="password" name="password" placeholder="Password" required />
+                                <input type="text" name="phone_number" placeholder="Phone Number" required />
+                                <button type="submit">REGISTER</button>
+                                <p class="message">Already Registered? <a href="{{ url_for('login') }}">Login Now</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="text">Green Tomorrow Starts Today<br><br>Plant a Tree, Change The World</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

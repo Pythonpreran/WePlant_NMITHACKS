@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEPLANT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}">
+        </div>
+        <a href="#home" class="dashboard">Home</a>
+        <a href="#about" class="dashboard">About Us</a>
+        <a href="#mytrees" class="dashboard">My Trees</a>
+        <a href="#contact" class="dashboard">Contact Us</a>
+        <a href="#addtree" class="dashboard">Add a New Tree</a>
+        <a href="#profile" class="dashboard">Profile</a>
+    </nav>
+    <div class="bg">
+        <img src="{{ url_for('static', filename='plantbg.png') }}">
+    </div>
+    <div class="container">
+        <div class="text">Plant A Tree<br><br>Grow A Forest</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps Embed</title>
+    <style>
+        #map {
+            height: 450px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Plant Locations</h1>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var center = {lat: 0, lng: 0}; // Default center of the map
+            var markers = {{ markers | tojson }};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 2,
+                center: center
+            });
+            markers.forEach(function(marker) {
+                new google.maps.Marker({
+                    position: {lat: parseFloat(marker.lat), lng: parseFloat(marker.lng)},
+                    map: map
+                });
+            });
+        }
+        // Ensure initMap() is called after Google Maps API is loaded
+        google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&callback=initMap"></script>
+</body>
+</html>
